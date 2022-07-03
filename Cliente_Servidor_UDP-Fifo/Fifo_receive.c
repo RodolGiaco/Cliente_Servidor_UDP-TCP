@@ -22,7 +22,7 @@ int main()
 	  ///Escribimos por consola
 	  write(1,"\nSe leyo de la FIFO: ", sizeof("\nSe leyo de la FIFO: "));
 	  write(1,buff,leido-1);
-	  write(1,"\n", sizeof("\n"));
+	  write(1,"\n", sizeof("\n"));//
 	}
    close(fd);
 }
