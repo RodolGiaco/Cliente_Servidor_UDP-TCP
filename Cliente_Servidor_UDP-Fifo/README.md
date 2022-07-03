@@ -1,5 +1,6 @@
 /////////// Fifo_UDP /////////////////////
 Tres procesos (A,B,C) NO relacionados se comunican de la siguiente forma:
+
 A y B se comunican por medio de un socket datagrama
 A y C se comunican por medio de una FIFO
 
@@ -15,10 +16,5 @@ El proceso A debe ser el segundo en comenzar en otra consola
 El proceso C debe ser el tercero en comenzar en otra consola
 Las señales se envían desde otra consola
 
+![image](https://user-images.githubusercontent.com/62679123/177046239-eea06906-5f26-4383-aea2-f814bd6b9b50.png)
 
- ---      ---------------       ---      --------  
-|   |--->|Socket datagrma |--->| B |--->|Pantalla|  
-| A |     ----------------      ---      --------
-|   |     ----------------      ---      --------  
-|   |--->|FIFO|--------------->| C |--->|Pantalla|  
- ---      ----------------      ---      --------
